@@ -7,4 +7,6 @@ RUN \
       exim4 \
   && \
   apt-get clean && \
-  rm -rf /var/lib/apt/lists/*
+  rm -rf /var/lib/apt/lists/* \
+  && \
+  exim -bV
